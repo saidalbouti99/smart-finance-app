@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_blob_scene_haikei__4_"
+    tools:context=".DailyReportMainActivity">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/lato"
+        android:text="Check Your Past"
+        android:textColor="#001220"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="INCOME"
+        android:textColor="#001220"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="EXPENSE"
+        android:textColor="#001220"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintEnd_toEndOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Record Here"
+        android:textColor="#001220"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_view_daily_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato_bold"
+        android:padding="30dp"
+        android:text="VIEW INCOME"
+        android:textColor="@color/text_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"></soup.neumorphism.NeumorphButton>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_view_daily_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:padding="30dp"
+        android:text="VIEW EXPENSE"
+        android:textColor="@color/text_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></soup.neumorphism.NeumorphButton>
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Check Your Past"
+        android:textColor="#001220"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lato"
+        android:text="Record Here"
+        android:textColor="#001220"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_view_daily_expense"
+        app:layout_constraintEnd_toEndOf="@+id/btn_view_daily_expense" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

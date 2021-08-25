@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neumorphism">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/neumorphism">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView21"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Maybank Islamic Fixed Deposit–i"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/neumorphImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/maybank_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView21"></soup.neumorphism.NeumorphImageView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView5"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphImageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphImageView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView24"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Min. Deposit"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView4"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_ic_ecommerce_money"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView24"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView24"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView24"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="RM 1000"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphImageView4"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphImageView4"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphImageView4"></soup.neumorphism.NeumorphTextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView8"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/neumorphCardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphImageView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView25"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Early Withdrawal"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView5"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_ic_shopping_wallet"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView25"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView25"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView25"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="Yes"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphImageView5"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphImageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphImageView5"></soup.neumorphism.NeumorphTextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView9"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:layout_constraintEnd_toEndOf="@+id/neumorphCardView8"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphCardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphCardView5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView26"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Interest Rate"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView6"
+                            android:layout_width="100dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_ic_shopping_discount"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView26"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView26"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView26"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="1.5% - 2.1% p.a"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphImageView6"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphImageView6"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphImageView6"></soup.neumorphism.NeumorphTextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphCardView9">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            style="@style/Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Please input the amount and the period that you want to invest"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <soup.neumorphism.NeumorphCardView
+                            android:id="@+id/card1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView5"
+                            app:layout_constraintHorizontal_bias="0.547"
+                            app:layout_constraintStart_toStartOf="@+id/textView5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                            <TextView
+                                style="@style/Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="RM"></TextView>
+
+                            <EditText
+                                android:id="@+id/et_fd_maybank"
+                                style="@style/Medium"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:paddingStart="50dp"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="20dp"></EditText>
+                        </soup.neumorphism.NeumorphCardView>
+
+                        <Spinner
+                            android:id="@+id/spinner_fd_maybank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="@+id/card1"
+                            app:layout_constraintStart_toStartOf="@+id/card1"
+                            app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView23"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Interest Rate:"
+                            app:layout_constraintStart_toStartOf="@+id/spinner_fd_maybank"
+                            app:layout_constraintTop_toBottomOf="@+id/spinner_fd_maybank"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/tv_fd_interest_rates_maybank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="%"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphTextView23"
+                            app:layout_constraintTop_toTopOf="@+id/neumorphTextView23"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/round_info_20"
+                            android:drawablePadding="5dp"
+                            android:text="Tips: The longer the period, the higher the \ninterest that you earned!"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView23"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView23"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphButton
+                            android:id="@+id/btn_proceed_fd_maybank"
+                            style="@style/Bold"
+                            android:layout_width="300dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center"
+                            android:padding="30dp"
+                            android:text="PROCEED"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/card1"
+                            app:layout_constraintStart_toStartOf="@+id/card1"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView22"></soup.neumorphism.NeumorphButton>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

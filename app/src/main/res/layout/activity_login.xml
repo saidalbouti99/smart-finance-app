@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_icon_smartfinancelogo" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            style="@style/Light"
+            android:letterSpacing="0.2"
+            android:text="SMARTFINANCE"
+            android:textColor="#193566"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/imageView6"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/writing" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            style="@style/Bold"
+            android:text="Welcome Back!"
+            android:textColor="#193566"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/textView3"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Please login to your account"
+            android:textColor="#222649"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="20dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <EditText
+                android:id="@+id/et_email_login"
+                style="@style/Medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Email"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="gravity"
+                android:textSize="16sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView3"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2">
+
+            <EditText
+                android:id="@+id/et_password_login"
+                style="@style/Medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            style="@style/Bold"
+            android:text="Not registered yet?"
+            android:textColor="#193566"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/neumorphCardView3" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            style="@style/Bold"
+            android:text="Forgot password"
+            android:textColor="#193566"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/neumorphCardView3"
+            app:layout_constraintTop_toBottomOf="@id/neumorphCardView3" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_login"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Login"
+            android:textColor="#222649"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/neumorphCardView3"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toStartOf="@+id/neumorphCardView3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

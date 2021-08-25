@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chip_nav_add_trans"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/rounded"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/menu_button"></com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+
+</RelativeLayout>
+</ScrollView>

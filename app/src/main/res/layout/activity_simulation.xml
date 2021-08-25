@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism"
+   >
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neumorphism"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/neumorphism">
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Investing Simulator"
+                android:textColor="@color/text_color_primary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView2"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="Choose the investment that you \nwant to simulate!"
+                android:textColor="@color/text_color_primary"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView"></soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView_fixed_depo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView4"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Low Risk"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView5"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="2dp"
+                        android:text="Fixed Deposit"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="@+id/neumorphTextView4"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView4">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="Investment that offers \na fixed profit / return \nupon the maturity of the \ndeposits."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/neumorphImageView7"
+                        app:layout_constraintStart_toStartOf="@+id/neumorphTextView4"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView5">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphImageView
+                        android:id="@+id/neumorphImageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:padding="18dp"
+                        android:src="@drawable/fixeddeposit"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/neumorphTextView4">
+
+                    </soup.neumorphism.NeumorphImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+<!--            <soup.neumorphism.NeumorphCardView-->
+<!--                android:id="@+id/neumorphCardView_gold"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:background="@color/white"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/neumorphTextView3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView_fixed_depo">-->
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/white">-->
+
+<!--                    <soup.neumorphism.NeumorphTextView-->
+<!--                        android:id="@+id/neumorphTextView7"-->
+<!--                        style="@style/Bold"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="12dp"-->
+<!--                        android:layout_marginTop="16dp"-->
+<!--                        android:text="Low Risk"-->
+<!--                        android:textColor="@color/gold"-->
+<!--                        android:textSize="18sp"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                    </soup.neumorphism.NeumorphTextView>-->
+
+<!--                    <soup.neumorphism.NeumorphTextView-->
+<!--                        android:id="@+id/neumorphTextView8"-->
+<!--                        style="@style/Bold"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:padding="2dp"-->
+<!--                        android:text="Gold"-->
+<!--                        android:textColor="@color/gold"-->
+<!--                        android:textStyle="italic"-->
+<!--                        app:layout_constraintStart_toStartOf="@+id/neumorphTextView7"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView7">-->
+
+<!--                    </soup.neumorphism.NeumorphTextView>-->
+
+<!--                    <soup.neumorphism.NeumorphTextView-->
+<!--                        android:id="@+id/neumorphTextView9"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="Lorem ipsum et al."-->
+<!--                        android:textColor="@color/gold"-->
+<!--                        app:layout_constraintStart_toStartOf="@+id/neumorphTextView8"-->
+<!--                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView8">-->
+
+<!--                    </soup.neumorphism.NeumorphTextView>-->
+
+<!--                    <soup.neumorphism.NeumorphImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:padding="18dp"-->
+<!--                        android:src="@drawable/goldpic"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="@+id/neumorphTextView7">-->
+
+<!--                    </soup.neumorphism.NeumorphImageView>-->
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            </soup.neumorphism.NeumorphCardView>-->
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView_robo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView_fixed_depo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView10"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Medium Risk"
+                        android:textColor="@color/pink"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextVie11"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Robo-advisors"
+                        android:textColor="@color/pink"
+                        android:textStyle="italic"
+                        app:layout_constraintStart_toStartOf="@+id/neumorphTextView10"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView10">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Digital services that help \ninvest your money based \non algorithms"
+                        app:layout_constraintStart_toStartOf="@+id/neumorphTextVie11"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextVie11">
+
+                    </soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:padding="18dp"
+                        android:src="@drawable/roboadvisors"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/neumorphTextView10">
+
+                    </soup.neumorphism.NeumorphImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

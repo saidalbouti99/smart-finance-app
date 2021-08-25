@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".AddIncomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="Category:"
+        android:textColor="@color/text_color_primary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <!--        <ToggleButton-->
+        <!--            android:id="@+id/cat_salary_income"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:background="@drawable/state_selected_button"-->
+        <!--            android:checked="false"-->
+        <!--            android:drawableTop="@drawable/ic_payments_24px"-->
+        <!--            android:drawablePadding="0dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:includeFontPadding="false"-->
+        <!--            android:padding="0dp"-->
+        <!--            android:textOn="Gift"-->
+        <!--            android:textOff="Gift"-->
+        <!--            android:textSize="10sp"-->
+        <!--            android:textStyle="bold">-->
+
+        <!--        </ToggleButton>-->
+
+        <!--        <ToggleButton-->
+        <!--            android:id="@+id/cat_gift_income"-->
+        <!--            style="@style/Bold"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_marginLeft="120dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:background="@drawable/state_selected_button"-->
+        <!--            android:checked="false"-->
+        <!--            android:drawableTop="@drawable/ic_card_giftcard_24px"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textOn="Gift"-->
+        <!--            android:textOff="Gift"-->
+        <!--            android:textSize="10sp"></ToggleButton>-->
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/cat_business_income"-->
+        <!--            style="@style/Bold"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_marginLeft="230dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:background="@drawable/rounded_neumorph"-->
+        <!--            android:drawableTop="@drawable/ic_ic_ecommerce_house"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Business"-->
+        <!--            android:textSize="10sp">-->
+
+        <!--        </androidx.appcompat.widget.AppCompatButton>-->
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/cat_dividends_income"-->
+        <!--            style="@style/Bold"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginTop="100dp"-->
+        <!--            android:background="@drawable/rounded_neumorph"-->
+        <!--            android:drawableTop="@drawable/ic_ic_statistics_circle_chart"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Dividends"-->
+        <!--            android:textSize="10sp">-->
+
+        <!--        </androidx.appcompat.widget.AppCompatButton>-->
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/cat_others_income"-->
+        <!--            style="@style/Bold"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_marginLeft="120dp"-->
+        <!--            android:layout_marginTop="100dp"-->
+        <!--            android:background="@drawable/rounded_neumorph"-->
+        <!--            android:drawableTop="@drawable/baseline_list_24"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Others"-->
+        <!--            android:textSize="10sp">-->
+
+        <!--        </androidx.appcompat.widget.AppCompatButton>-->
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cat_salary_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/green_confirm"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Salary"
+                android:textColor="@drawable/text_color_radio_button"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_gift_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/green_confirm"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Gift"
+                android:textColor="@drawable/text_color_radio_button"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_business_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/green_confirm"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Business"
+                android:textColor="@drawable/text_color_radio_button"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_dividend_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-290dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/green_confirm"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Dividends"
+                android:textColor="@drawable/text_color_radio_button"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_others_income"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/green_confirm"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Others"
+                android:textColor="@drawable/text_color_radio_button"></RadioButton>
+        </RadioGroup>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_ecommerce_money" />
+
+        <EditText
+            android:id="@+id/et_amount_add_income"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="RM"
+            android:inputType="numberDecimal"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_actions_calendar" />
+
+        <EditText
+            android:id="@+id/et_date_add_income"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Date"
+            android:inputType="none"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_contact_edit" />
+
+        <EditText
+            android:id="@+id/et_notes_add_income"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="Notes"
+            android:inputType="text"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+
+    </soup.neumorphism.NeumorphCardView>
+
+<!--    <soup.neumorphism.NeumorphCardView-->
+<!--        android:id="@+id/card4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/card"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card3">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:src="@drawable/ic_ic_devices_camera" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btn_upload_add_income"-->
+<!--            style="@style/Medium"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:gravity="left"-->
+<!--            android:hint="Upload Receipt"-->
+<!--            android:inputType="text"-->
+<!--            android:paddingStart="50dp"-->
+<!--            android:paddingLeft="120dp"-->
+<!--            android:paddingTop="18dp"-->
+<!--            android:paddingEnd="20dp"-->
+<!--            android:paddingRight="20dp"-->
+<!--            android:paddingBottom="20dp"-->
+<!--            android:textSize="18dp"></androidx.appcompat.widget.AppCompatButton>-->
+
+<!--    </soup.neumorphism.NeumorphCardView>-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_confirm_add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_ic_actions_check_simple"
+        app:backgroundTint="@color/green_confirm"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3"
+        app:maxImageSize="36dp"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cancel_add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_ic_actions_close_simple"
+        app:backgroundTint="@color/red_cancel"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3"
+        app:maxImageSize="36dp"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

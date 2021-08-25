@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/income"
+        android:title="INCOME"
+        android:icon="@drawable/ic_add_24px"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="@color/insurance"></item>
+
+    <item
+        android:id="@+id/expense"
+        android:title="EXPENSE"
+        android:icon="@drawable/ic_remove_24px"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"
+        app:cnb_backgroundColor="#ff785b"></item>
+
+</menu>

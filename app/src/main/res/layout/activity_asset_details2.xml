@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView11"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="GOLD INVESTMENT ACCOUNT"
+                    android:textColor="@color/gold"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/neumorphTextView11"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphTextView11"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView11"
+                    app:srcCompat="@drawable/goldpic" />
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:justificationMode="inter_word"
+                    android:text="A gold investment account is an account that allows you to invest in gold commodity without the need to keep physical gold. "
+                    android:textColor="@color/text_color_primary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    tools:targetApi="o"></soup.neumorphism.NeumorphTextView>
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:justificationMode="inter_word"
+                    android:text="With a gold investment account, you can engage in the purchase of gold based on the bank’s prevailing selling price, as well as, the selling of gold based on the bank’s prevailing buying price. The difference between the bank’s buying price and selling price is your profit or loss.
+\nFor example, if you bought one gram of gold at a selling rate of RM130 per gram, then sold the gold at a buying rate of RM140 per gram; your profit from this particular investment is RM140 – RM130 = RM10"
+                    android:textColor="@color/text_color_primary"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView13"
+                    tools:targetApi="o"></soup.neumorphism.NeumorphTextView>
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Tips: \n1.Be informed of the fees &amp; charges such as annual fee, withdrawal fee etc.\n
+2. Extend your FD period: Just like a conventional FD, your Islamic FD generates higher return for longer FD period."
+                    android:textColor="@color/text_color_primary"
+                    app:layout_constraintEnd_toEndOf="@+id/neumorphTextView14"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphTextView14"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView14"></soup.neumorphism.NeumorphTextView>
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView20"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="You can select the gold that suits your financial \nsituation below:"
+                    android:textColor="@color/text_color_primary"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView15">
+
+                </soup.neumorphism.NeumorphTextView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/cv_fd_bank_rakyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/neumorphism"
+                    app:layout_constraintEnd_toEndOf="@+id/neumorphTextView15"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView20">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/neumorphism">
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/maybank_logo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView16"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Maybank Gold Investment"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                            app:layout_constraintTop_toTopOf="@+id/neumorphImageView"></soup.neumorphism.NeumorphTextView>
+
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Buying Price"
+                            app:fontFamily="@font/roboto_medium"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView16"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="RM 233"
+                            android:textColor="@color/savings"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/roboto_medium"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView17"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView17"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView27"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Selling Price"
+                            android:textColor="@color/text_color_primary"
+                            app:layout_constraintBottom_toBottomOf="@+id/neumorphTextView17"
+                            app:layout_constraintStart_toEndOf="@id/neumorphTextView17"
+                            app:layout_constraintTop_toTopOf="@+id/neumorphTextView17"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="RM227"
+                            android:textColor="@color/red_cancel"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView27"
+                            app:layout_constraintHorizontal_bias="0.371"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView27"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView27"></soup.neumorphism.NeumorphTextView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/cv_fd_maybank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/neumorphism"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/neumorphTextView15"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_fd_bank_rakyat">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/neumorphism">
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/cimblogo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView19"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="CIMB Gold Investment"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Buying Price"
+                            app:fontFamily="@font/roboto_medium"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView19"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="RM 233"
+                            android:textColor="@color/savings"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/roboto_medium"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView18"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView29"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Selling Price"
+                            android:textColor="@color/text_color_primary"
+                            app:layout_constraintStart_toEndOf="@+id/neumorphTextView18"
+                            app:layout_constraintTop_toTopOf="@+id/neumorphTextView18"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="RM231"
+                            android:textColor="@color/red_cancel"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView29"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView29"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView29"></soup.neumorphism.NeumorphTextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

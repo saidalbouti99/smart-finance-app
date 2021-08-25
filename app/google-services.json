@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "36156248607",
+    "project_id": "smartfinance-50605",
+    "storage_bucket": "smartfinance-50605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36156248607:android:5bf89a52d2e3810a44fb2a",
+        "android_client_info": {
+          "package_name": "com.example.finalyearproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36156248607-es1u1cerrc3h60ed2rvltdaq47v3og4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtHzLAwzBfuOdmqw_cUtk1AxvbpusJ5pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36156248607-es1u1cerrc3h60ed2rvltdaq47v3og4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36156248607:android:f92998a0d59e6f3144fb2a",
+        "android_client_info": {
+          "package_name": "com.example.smartfinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36156248607-es1u1cerrc3h60ed2rvltdaq47v3og4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtHzLAwzBfuOdmqw_cUtk1AxvbpusJ5pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36156248607-es1u1cerrc3h60ed2rvltdaq47v3og4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

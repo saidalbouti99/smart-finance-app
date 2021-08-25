@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/neumorphTextView"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Budgeting"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/neumorphTextView2"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Below is the recommended household \nexpenses from AKPK"
+            android:textColor="@color/text_color_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView"></soup.neumorphism.NeumorphTextView>
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/neumorphism"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView2"
+            app:srcCompat="@drawable/piechartakpk" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/textView4"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Choose your monthly income"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_rm_3000"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="30dp"
+            android:text="RM 3000"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"></soup.neumorphism.NeumorphButton>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_rm_4000"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="30dp"
+            android:text="RM 4000"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_rm_3000"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"></soup.neumorphism.NeumorphButton>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_rm_5000"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="30dp"
+            android:text="RM 5000"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/btn_rm_3000"
+            app:layout_constraintTop_toBottomOf="@+id/btn_rm_3000"></soup.neumorphism.NeumorphButton>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_rm_6000"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="30dp"
+            android:text="RM 6000"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_rm_5000"
+            app:layout_constraintTop_toBottomOf="@+id/btn_rm_3000"></soup.neumorphism.NeumorphButton>
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Or enter your monthly income and we will\ncalculate your budget for you"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_rm_5000" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RM"
+                style="@style/Medium"
+                android:padding="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/et_income_amount_calculator"
+                style="@style/Medium"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:paddingStart="50dp"
+                android:paddingLeft="50dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"></EditText>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_proceed_calculator"
+            style="@style/Bold"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="PROCEED"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card1"
+            app:layout_constraintStart_toStartOf="@+id/card1"
+            app:layout_constraintTop_toBottomOf="@id/card1"></soup.neumorphism.NeumorphButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

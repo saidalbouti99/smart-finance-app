@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="neumorphism">#ECF0F3</color>
+    <color name="text_color_primary">#193566</color>
+    <color name="house_loan">#FF8585</color>
+    <color name="groceries_food">#193566</color>
+    <color name="utility_bills">#EE01A3</color>
+    <color name="transport">#E51A62</color>
+    <color name="insurance">#00C9B7</color>
+    <color name="loan_payment">#845EC2</color>
+    <color name="savings">#1DC18E</color>
+    <color name="green_confirm">#5CFA6D</color>
+    <color name="red_cancel">#FE0000</color>
+    <color name="gold">#FFBF00</color>
+    <color name="pink">#FF73AB</color>
+    <color name="bluebgmain">#4A47A7</color>
+    <color name="turqouise">#4ed1c1</color>
+    <color name="lightblue">#3498db</color>
+    <color name="lightblue2">#88bef5</color>
+    <color name="lightpink">#f0657A</color>
+    <color name="indigo">#080E31</color>
+    <color name="green_confirm2">#1abc9c</color>
+
+    <color name="blue2">#222649</color>
+</resources>

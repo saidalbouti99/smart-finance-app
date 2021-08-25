@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIncomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:text="Category:"
+        android:textColor="@color/text_color_primary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card"
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cat_food_drink_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Food &amp; Drink"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_transport_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Transport"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_house_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-250dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="House"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_bills_expense"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Bills"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_health_expense"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Health"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_travel_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-260dp"
+                android:layout_marginTop="145dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Travel"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_entertainment_expense"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="145dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Entertainment"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_invest_expense"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-210dp"
+                android:layout_marginTop="210dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="Investment"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/cat_others_expense"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="210dp"
+                android:background="@drawable/radio_selector_expense"
+                android:button="@color/red_cancel"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Others"
+                android:textColor="@drawable/text_color_radio_button_expense"></RadioButton>
+
+        </RadioGroup>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_ecommerce_money" />
+
+        <EditText
+            android:id="@+id/et_amount_add_expense"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="RM"
+            android:inputType="numberDecimal"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_actions_calendar" />
+
+        <EditText
+            android:id="@+id/et_date_add_expense"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="Date"
+            android:inputType="none"
+            android:focusableInTouchMode="false"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_contact_edit" />
+
+        <EditText
+            android:id="@+id/et_notes_add_expense"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="Notes"
+            android:inputType="text"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"></EditText>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_ic_devices_camera" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/et_upload_add_expense"
+            style="@style/Medium"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:hint="Upload Receipt"
+            android:gravity="left"
+            android:inputType="text"
+            android:paddingStart="50dp"
+            android:paddingLeft="120dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"></androidx.appcompat.widget.AppCompatButton>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_confirm_add_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_ic_actions_check_simple"
+        app:backgroundTint="@color/green_confirm"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card4"
+        app:maxImageSize="36dp"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cancel_add_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_ic_actions_close_simple"
+        app:backgroundTint="@color/red_cancel"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card4"
+        app:maxImageSize="36dp"
+        app:tint="@color/white" />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/img_receipt_add_expense"
+        android:layout_width="147dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/card4"
+        app:layout_constraintStart_toStartOf="@+id/card4"
+        app:layout_constraintTop_toBottomOf="@+id/card4">
+
+    </soup.neumorphism.NeumorphImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

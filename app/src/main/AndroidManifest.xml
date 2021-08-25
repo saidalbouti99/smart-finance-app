@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartfinance">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartFinance">
+        <activity android:name=".PastIncomeDetailActivity"></activity>
+        <activity android:name=".PastExpenseDetailActivity"></activity>
+        <activity android:name=".PortfolioVeryAggressiveResultActivity" />
+        <activity android:name=".PortfolioVeryAggressiveActivity" />
+        <activity android:name=".PortfolioModerateResultActivity" />
+        <activity android:name=".PortfolioVeryConservativeResultActivity" />
+        <activity android:name=".VeryAggressiveActivity" />
+        <activity android:name=".PortfolioModerateActivity" />
+        <activity android:name=".PortfolioVeryConservativeActivity" />
+        <activity android:name=".FDMaybankActivity" />
+        <activity android:name=".FDBankRakyatActivity" />
+        <activity android:name=".TipsActivity" />
+        <activity android:name=".AssetDetailActivity3" />
+        <activity android:name=".AssetDetailsActivity2" />
+        <activity android:name=".PastIncomeActivity" />
+        <activity android:name=".DailyReportMainActivity" />
+        <activity android:name=".PastExpenseActivity" />
+        <activity android:name=".FixedDepositDetailActivity2" />
+        <activity android:name=".FixedDepositDetailActivity1" />
+        <activity android:name=".AssetDetailsActivity1" />
+        <activity android:name=".SimulationActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".AddTransactionActivity" />
+        <activity android:name=".CalculatorResultActivity" />
+        <activity android:name=".CalculatorActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.smartfinance.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

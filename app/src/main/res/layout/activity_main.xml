@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222649"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_tips"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_light_blue"
+            android:clickable="true"
+            android:drawableTop="@drawable/round_info_20"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Tips"
+            android:textColor="@color/white"
+            app:backgroundTint="#83e85a"
+            app:icon="@drawable/ic_info_24px___copy"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_calculator"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/bg_light_blue"
+            android:clickable="true"
+            android:drawableTop="@drawable/round_info_20"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Calculator"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:backgroundTint="#ba53de"
+            app:icon="@drawable/ic_calculate_24px"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_menu_simulator"
+            app:layout_constraintStart_toEndOf="@+id/btn_menu_tips"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_simulator"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_light_blue"
+            android:clickable="true"
+            android:drawableTop="@drawable/round_info_20"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Simulator"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="#FF4B32"
+            app:icon="@drawable/ic_trending_up_24px"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_daily_reports"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_light_blue"
+            android:clickable="true"
+            android:drawableTop="@drawable/round_info_20"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Daily Reports"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:backgroundTint="@color/gold"
+            app:icon="@drawable/ic_ic_actions_emultiple_edit"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintStart_toStartOf="@+id/btn_menu_tips"
+            app:layout_constraintTop_toBottomOf="@+id/btn_menu_tips"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_add_trans"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_light_blue"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_add_24px"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Add Transaction"
+            android:textColor="@color/white"
+            app:backgroundTint="#1DC18E"
+            app:icon="@drawable/ic_add_24px"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_menu_reports"
+            app:layout_constraintStart_toEndOf="@+id/btn_menu_daily_reports"
+            app:layout_constraintTop_toBottomOf="@+id/btn_menu_calculator"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_reports"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_green"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_assessment_24px"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingTop="10dp"
+            android:text="Reports"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:backgroundTint="@color/lightblue2"
+            app:icon="@drawable/ic_assessment_24px"
+            app:iconGravity="top"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_menu_simulator"></com.google.android.material.button.MaterialButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.hitomi.cmlibrary.CircleMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

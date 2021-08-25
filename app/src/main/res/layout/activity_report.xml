@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neumorphism">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/neumorphism"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/neumorphism">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/textView16"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Monthly Expense Summary"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_current_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Current Date"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie_chart_monthly_expense"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView16"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="MONTHLY TOTAL:"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/pie_chart_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/tv_total_monthly"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:text="100"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/pie_chart_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="BY CATEGORY:"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView18"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Food &amp; Drink"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <TextView
+                    android:id="@+id/TextView22"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_food_drink_expense"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_food_drink_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_food_drink_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_food_drink_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/groceries_food"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_food_drink_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView21"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Transportation"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar_food_drink_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView24"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_transport_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_transport_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_transport_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/transport"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_transport_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView23"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="House"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_transport_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView26"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_house_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_house_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView25"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_house_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/house_loan"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_house_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView25"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Bills"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_house_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView28"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_bills_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_bills_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView27"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_bills_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/utility_bills"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_bills_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView27"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Health"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_bills_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView30"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_health_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_health_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView29"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_health_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_bills_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView29"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+
+                <TextView
+                    android:id="@+id/textView31"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Travel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_health_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView32"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_travel_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_travel_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView31"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_travel_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/green_confirm"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_health_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Entertainment"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_travel_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView34"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_ent_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_ent_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView33"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_ent_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/red_cancel"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_travel_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Investment"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_ent_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView36"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_invest_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_invest_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView35"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_invest_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/savings"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_invest_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView35"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Others"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar_invest_monthly_expense" />
+
+                <TextView
+                    android:id="@+id/TextView38"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_others_expense"
+                    app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_others_expense"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly"
+                    app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_others_monthly_expense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:progress="30"
+                    android:progressTint="@color/insurance"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_monthly_others_expense"
+                    app:layout_constraintStart_toStartOf="@+id/textView37"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardview2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/neumorphism"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/neumorphism">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/textView40"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Monthly Income Summary"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie_chart_monthly_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40">
+
+                </com.github.mikephil.charting.charts.PieChart>
+                <TextView
+                    android:id="@+id/textView41"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="MONTHLY TOTAL:"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView40"
+                    app:layout_constraintTop_toBottomOf="@+id/pie_chart_monthly_income" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+                <TextView
+                    android:id="@+id/tv_total_monthly_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="32dp"
+                    android:text="100"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView40"
+                    app:layout_constraintTop_toBottomOf="@+id/pie_chart_monthly_income" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="BY CATEGORY:"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView41"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Salary"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView43"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <TextView
+                    android:id="@+id/TextView45"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_salary_income"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_salary_income"
+                    app:layout_constraintTop_toTopOf="@+id/tv_monthly_salary_income" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_salary_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView44"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_salary_monthly_income"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/red_cancel"
+                    app:layout_constraintStart_toStartOf="@+id/textView44"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+
+                <TextView
+                    android:id="@+id/textView46"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Gift"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView44"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar_salary_monthly_income" />
+
+                <TextView
+                    android:id="@+id/TextView47"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_gift_income"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_gift_income"
+                    app:layout_constraintTop_toTopOf="@+id/tv_monthly_gift_income" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_gift_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_gift_monthly_income"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/green_confirm"
+                    app:layout_constraintStart_toStartOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar_gift_monthly_income" />
+
+                <TextView
+                    android:id="@+id/TextView49"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_business_income"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_business_income"
+                    app:layout_constraintTop_toTopOf="@+id/tv_monthly_business_income" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_business_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_business_monthly_income"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/insurance"
+                    app:layout_constraintStart_toStartOf="@+id/textView48"
+                    app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Dividends"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView46"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar_business_monthly_income" />
+
+                <TextView
+                    android:id="@+id/TextView51"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_dividends_income"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_dividends_income"
+                    app:layout_constraintTop_toTopOf="@+id/tv_monthly_dividends_income" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_dividends_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView50"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView50" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_dividends_monthly_income"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="30"
+                    android:progressTint="@color/savings"
+                    app:layout_constraintStart_toStartOf="@+id/textView50"
+                    app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Others"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/textView50"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar_dividends_monthly_income" />
+
+                <TextView
+                    android:id="@+id/TextView53"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="RM"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_others_income"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_monthly_others_income"
+                    app:layout_constraintTop_toTopOf="@+id/tv_monthly_others_income" />
+
+                <TextView
+                    android:id="@+id/tv_monthly_others_income"
+                    style="@style/Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView52"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total_monthly_income"
+                    app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_others_monthly_income"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="304dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:progress="30"
+                    android:progressTint="@color/transport"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView52"
+                    app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/neumorphism"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardview2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neumorphism">
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/textView55"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Monthly Net Spending Summary"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart_monthly_net_spend"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView55"
+            app:layout_constraintStart_toStartOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" >
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+
+        <TextView
+            android:id="@+id/textView56"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="BY CATEGORY:"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/pie_chart_monthly_net_spend" />
+
+        <TextView
+            android:id="@+id/textView57"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Income"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView56"
+            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+        <TextView
+            android:id="@+id/tv_monthly_income2"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="TextView"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/TextView58"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="RM"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_income2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_monthly_income2"
+            app:layout_constraintTop_toTopOf="@+id/tv_monthly_income2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_income"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:progress="30"
+            android:progressTint="@color/green_confirm"
+            app:layout_constraintStart_toStartOf="@+id/textView57"
+            app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        <TextView
+            android:id="@+id/textView59"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Expense"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView56"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar_income" />
+
+        <TextView
+            android:id="@+id/tv_monthly_expense2"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="TextView"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+        <TextView
+            android:id="@+id/TextView60"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="RM"
+            android:textColor="@color/text_color_primary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_monthly_expense2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_monthly_expense2"
+            app:layout_constraintTop_toTopOf="@+id/tv_monthly_expense2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_expense"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="8dp"
+            android:progress="30"
+            android:progressTint="@color/red_cancel"
+            app:layout_constraintStart_toStartOf="@+id/textView59"
+            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/text"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="Net Spending:"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_monthly_net_spend"
+            app:layout_constraintEnd_toStartOf="@id/tv_monthly_net_spend"
+            app:layout_constraintTop_toTopOf="@id/tv_monthly_net_spend"></soup.neumorphism.NeumorphTextView>
+
+        <soup.neumorphism.NeumorphTextView
+            android:id="@+id/tv_monthly_net_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/text_color_primary"
+            android:textSize="24sp"
+            style="@style/Bold"
+            app:layout_constraintTop_toBottomOf="@id/progressBar_expense"
+            app:layout_constraintEnd_toEndOf="@id/tv_monthly_expense2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+        </soup.neumorphism.NeumorphTextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

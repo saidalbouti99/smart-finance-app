@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neumorphism">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/neumorphism">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/neumorphTextView21"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Very Aggressive Portfolio"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                <ImageView
+                    android:id="@+id/neumorphImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:src="@drawable/veryaggresisveport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphTextView21"></ImageView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:layout_constraintStart_toStartOf="@+id/neumorphCardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphImageView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView26"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average Return"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphImageView
+                            android:id="@+id/neumorphImageView6"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_ic_shopping_discount"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView26"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView26"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView26"></soup.neumorphism.NeumorphImageView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView28"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="9.91 %"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphImageView6"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphImageView6"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphImageView6"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/textView54"
+                            style="@style/Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Estimate based on historical returns"
+                            app:layout_constraintEnd_toEndOf="@+id/neumorphTextView28"
+                            app:layout_constraintStart_toStartOf="@+id/neumorphTextView28"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView28" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/neumorphCardView9">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            style="@style/Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Please input the amount and the period \nthat you want to invest"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <soup.neumorphism.NeumorphCardView
+                            android:id="@+id/card1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView5"
+                            app:layout_constraintHorizontal_bias="0.547"
+                            app:layout_constraintStart_toStartOf="@+id/textView5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                            <TextView
+                                style="@style/Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="20dp"
+                                android:text="RM"></TextView>
+
+                            <EditText
+                                android:id="@+id/et_robo_very_aggressive_amount"
+                                style="@style/Medium"
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:paddingStart="50dp"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="20dp"></EditText>
+                        </soup.neumorphism.NeumorphCardView>
+
+                        <Spinner
+                            android:id="@+id/spinner_very_aggressive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintEnd_toEndOf="@+id/card1"
+                            app:layout_constraintStart_toStartOf="@+id/card1"
+                            app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:id="@+id/neumorphTextView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:drawableLeft="@drawable/round_info_20"
+                            android:drawablePadding="5dp"
+                            android:text="Tips: The longer the period, the higher the \ninterest that you earned!"
+                            app:layout_constraintStart_toStartOf="@+id/spinner_moderate"
+                            app:layout_constraintTop_toBottomOf="@+id/spinner_very_aggressive"></soup.neumorphism.NeumorphTextView>
+
+                        <soup.neumorphism.NeumorphButton
+                            android:id="@+id/btn_proceed_very_aggressive"
+                            style="@style/Bold"
+                            android:layout_width="300dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center"
+                            android:padding="30dp"
+                            android:text="PROCEED"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/card1"
+                            app:layout_constraintStart_toStartOf="@+id/card1"
+                            app:layout_constraintTop_toBottomOf="@+id/neumorphTextView22"></soup.neumorphism.NeumorphButton>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

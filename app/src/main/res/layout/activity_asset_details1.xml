@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <soup.neumorphism.NeumorphTextView-->
+<!--            style="@style/Bold"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="Bank Rakyat Term Deposit Account-i"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        </soup.neumorphism.NeumorphTextView>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView11"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="FIXED DEPOSIT"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/neumorphTextView11"
+                app:layout_constraintStart_toStartOf="@+id/neumorphTextView11"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView11"
+                app:srcCompat="@drawable/fixeddeposit" />
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:justificationMode="inter_word"
+                android:text="An Islamic Fixed Deposit Account (Islamic FD, or commonly referred to as Islamic Fixed Deposit-i or General Investment Account-i) is a financial instrument that offers a fixed profit / return upon the maturity of the deposits. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                tools:targetApi="o"></soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:justificationMode="inter_word"
+                android:text="Different Islamic FD give you different rates of return. To get the best return from your Islamic FD deposits, you can consider doing the following:"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView13"
+                tools:targetApi="o"></soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Compare the rates: Different banks offer different rates of return for their Islamic FD.\n
+2. Extend your FD period: Just like a conventional FD, your Islamic FD generates higher return for longer FD period."
+                app:layout_constraintEnd_toEndOf="@+id/neumorphTextView14"
+                app:layout_constraintStart_toStartOf="@+id/neumorphTextView14"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView14"></soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/neumorphTextView20"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="You can select the FD that suits your financial \nsituation below:"
+                app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView15">
+
+            </soup.neumorphism.NeumorphTextView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cv_fd_bank_rakyat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/neumorphism"
+                app:layout_constraintEnd_toEndOf="@+id/neumorphTextView15"
+                app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphTextView20">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/neumorphism">
+
+                    <soup.neumorphism.NeumorphImageView
+                        android:id="@+id/neumorphImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/bank_rakyat_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphImageView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView16"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Bank Rakyat Term \nDeposit Account-i"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                        app:layout_constraintTop_toTopOf="@+id/neumorphImageView"></soup.neumorphism.NeumorphTextView>
+                    \
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Interest Rate"
+                        app:fontFamily="@font/roboto_medium"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView16"></soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="1.85% p.a - 2.7% p.a"
+                        android:textColor="@color/savings"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/roboto_medium"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView17"></soup.neumorphism.NeumorphTextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cv_fd_maybank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/neumorphism"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/neumorphTextView15"
+                app:layout_constraintStart_toStartOf="@+id/neumorphTextView15"
+                app:layout_constraintTop_toBottomOf="@+id/cv_fd_bank_rakyat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/neumorphism">
+
+                    <soup.neumorphism.NeumorphImageView
+                        android:id="@+id/neumorphImageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/maybank_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphImageView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView19"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Maybank Islamic Fixed \nDeposit–i"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                        app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        android:id="@+id/neumorphTextView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Interest Rate"
+                        app:fontFamily="@font/roboto_medium"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView19"></soup.neumorphism.NeumorphTextView>
+
+                    <soup.neumorphism.NeumorphTextView
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="1.5% p.a - 2.1% p.a"
+                        android:textColor="@color/savings"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/roboto_medium"
+                        app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
+                        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView18"></soup.neumorphism.NeumorphTextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

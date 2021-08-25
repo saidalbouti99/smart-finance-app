@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Smart Finance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="fdterm">
+        <item>Please select duration</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+        <item>2 Years</item>
+    </string-array>
+
+    <string-array name="fdtermmaybank">
+        <item>Please select duration</item>
+        <item>6 Months</item>
+        <item>1 Year</item>
+        <item>5 Years</item>
+    </string-array>
+
+    <string-array name="veryconservative">
+        <item>Please select duration</item>
+        <item>1 Year</item>
+        <item>2 Years</item>
+        <item>5 Years</item>
+    </string-array>
+</resources>

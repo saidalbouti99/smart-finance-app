@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neumorphism"
+    tools:context=".CalculatorResultActivity">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/neumorphTextView"
+        style="@style/Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Here is the budget suggested for you"
+        android:textColor="@color/text_color_primary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></soup.neumorphism.NeumorphTextView>
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView6"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Housing Loan"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphTextView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="30"
+        android:progressTint="#FF8585"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tv_housingloan_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar2" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView7"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Groceries"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="25"
+        android:progressTint="@color/groceries_food"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/tv_groceries_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar3" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView8"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Loan Payment"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="15"
+        android:progressTint="@color/loan_payment"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tv_loan_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar4"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar4" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView9"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Utility Bills"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_utility"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="10"
+        android:progressTint="@color/utility_bills"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/tv_utility_bills_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_utility"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_utility" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView10"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Savings"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_utility" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_savings"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="10"
+        android:progressTint="@color/savings"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tv_savings_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_savings"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_savings" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView11"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Insurance"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_savings" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_insurance"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="5"
+        android:progressTint="@color/insurance"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/tv_insurance_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_insurance"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_insurance" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView12"
+        style="@style/Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Transportation"
+        android:textColor="@color/text_color_primary"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_insurance" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_transportation"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="16dp"
+        android:progress="5"
+        android:progressTint="@color/transport"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tv_transportation_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:textColor="@color/text_color_primary"
+        style="@style/Medium"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar_transportation"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_transportation" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView13"
+        style="@style/Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total Budget:"
+        android:textColor="@color/text_color_primary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/neumorphTextView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_transportation" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/textView14"
+        style="@style/Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="RM"
+        android:textColor="@color/text_color_primary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/tv_total_calculator2"
+        style="@style/Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="0"
+        android:textColor="@color/text_color_primary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_try_again_calculator"
+        style="@style/Bold"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="TRY AGAIN"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_transportation"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"></soup.neumorphism.NeumorphButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
