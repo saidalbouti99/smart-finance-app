@@ -12,3 +12,8 @@ The aim of this application is to tackle these problems by to developing a mobil
 - Record Daily Incomes & Expenses
 - Monthly Incomes & Expenses Report
 
+## Installation
+
+Installation Link:
+https://drive.google.com/file/d/1x1hfUeFARsCSA2MI0GjjNYKGglQDdM-H/view?usp=sharing
+
